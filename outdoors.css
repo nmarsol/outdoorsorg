@@ -1,0 +1,824 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/webimage1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 135px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: inline;
+    font-size: 15px;
+    line-height: 1.2;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.nav.fa{
+    display: none;
+}
+
+.text-box{
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.hero-btn:hover{
+    border: 1px solid #fff;
+    background: #fff;
+}
+
+/*-------------- discover ---------------*/
+
+.discover{
+    width: 80%;
+    margin: auto;
+    padding-top: 34px;
+    padding-bottom: 50px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discover-col{
+    flex-basis: 31%;
+    background: #fff;
+    border-radius: 10px;
+    border-style: solid;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.discover-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/*-------------- Get Involved ---------------*/
+.involved{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.involved-col{
+    flex-basis: 32%;
+    border-style: solid;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.involved-col img{
+    height: 400px;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: .5s;
+}
+.layer:hover{
+    background: rgba(226, 0, 0, 0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*-------------- Support the Outdoors ----------------*/
+
+.support{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.support-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.support-col h1{
+    padding-top: 0;
+}
+.support-col p{
+    padding: 15px 0 25px;
+}
+
+.hero-btn.red-btn{
+    border: 1px solid;
+    border-radius: 10px;
+    background: transparent;
+    color: black;
+}
+.hero-btn.red-btn:hover{
+    border: 1px solid;
+    background: #fff;
+    color: #fff;
+}
+.hero-btn.red-btn::after{
+    background: #fff;
+}
+.hero-btn.red-btn::before{
+    background: #fff;
+}
+.content-image{
+    flex-basis: 50%;
+}
+.support-col img{
+    width: 100%;
+}
+
+/*-------------- Footer ----------------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: black;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+
+/*-------------- Explore With Us Page ----------------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/webimage3.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.explore{
+    width: 80%;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.explore-col{
+    flex-basis: 48%;
+    padding: 0px;
+    margin: 60px;
+}
+.explore-col h1{
+    padding-top: 0;
+    text-align: left;
+}
+.explore-col p{
+    padding: 15px 0 25px;
+    text-align: left;
+}
+
+.hero-btn.red-btn{
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+}
+.hero-btn.red-btn:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    color: #fff;
+}
+.hero-btn.red-btn::after{
+    background: #fff;
+}
+.hero-btn.red-btn::before{
+    background: #fff;
+}
+.content-image{
+    flex-basis: 50%;
+}
+.explore-col img{
+    width: 100%;
+}
+
+/*-------------- Plan Your Visit ----------------*/
+
+.plan{
+    width: 80%;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.plan-col{
+    flex-basis: 48%;
+    padding: 10px;
+    margin: 40px;
+}
+.plan-col h1{
+    padding-top: 0;
+    text-align: left;
+}
+.plan-col p{
+    padding: 15px 0 25px;
+    text-align: left;
+}
+
+.hero-btn.red-btn{
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+}
+.hero-btn.red-btn:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    color: #fff;
+}
+.hero-btn.red-btn::after{
+    background: #fff;
+}
+.hero-btn.red-btn::before{
+    background: #fff;
+}
+.content-image{
+    flex-basis: 50%;
+}
+.plan-col img{
+    width: 100%;
+}
+
+/*-------------- Outdoor Life Page ----------------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/getinvolved.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.resources{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.resources-box{
+    flex-basis: 48%;
+    padding: 10px;
+    margin: 60px;
+}
+.resources-box h1{
+    padding-top: 0;
+    text-align: left;
+    font-size: 30px;
+}
+.resources-box p{
+    padding: 20px 0 40px;
+    text-align: left;
+}
+
+.hero-btn.red-btn{
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+    margin-top: 20px;
+}
+.hero-btn.red-btn:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    color: #fff;
+}
+.hero-btn.red-btn::after{
+    background: #fff;
+}
+.hero-btn.red-btn::before{
+    background: #fff;
+}
+
+/*-------------- Hiking 101 ----------------*/
+
+.hiking{
+    width: 80%;
+    margin: auto;
+}
+
+.hiking-col{
+    flex-basis: 48%;
+    padding: 10px;
+    margin: 60px;
+}
+.hiking-col h1{
+    padding-top: 0;
+    text-align: left;
+}
+.hiking-col p{
+    padding: 15px 0 25px;
+    text-align: left;
+}
+
+.hero-btn.red-btn{
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+}
+.hero-btn.red-btn:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    color: #fff;
+}
+.hero-btn.red-btn::after{
+    background: #fff;
+}
+.hero-btn.red-btn::before{
+    background: #fff;
+}
+.content-image{
+    flex-basis: 50%;
+}
+.hiking-col img{
+    width: 100%;
+}
+
+/*-------------- Leave No Trace ----------------*/
+
+.notrace{
+    width: 70%;
+    margin: auto;
+    min-height: 270px;
+    
+}
+.notrace-col{
+    flex-basis: 48%;
+    padding: 10px;
+    margin: 60px;
+}
+.notrace-col h1{
+    padding-top: 0;
+    text-align: left;
+}
+.notrace-col p{
+    padding: 15px 0 25px;
+    text-align: left;
+}
+
+.hero-btn.red-btn{
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+}
+.hero-btn.red-btn:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    color: #fff;
+}
+.hero-btn.red-btn::after{
+    background: #fff;
+}
+.hero-btn.red-btn::before{
+    background: #fff;
+}
+.content-image{
+    flex-basis: 50%;
+}
+.notrace img{
+   width: 100%;
+}
+
+/*-------------- Resources & News ----------------*/
+
+.news{
+    flex-basis: 48%;
+    width: 80%;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+.news-col{
+    flex-basis: 48%;
+    padding: 10px;
+    margin: 60px;
+}
+.news-col h1{
+    padding-top: 0;
+    text-align: left;
+}
+.news-col p{
+    padding: 15px 0 25px;
+    text-align: left;
+}
+
+.hero-btn.red-btn{
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+}
+.hero-btn.red-btn:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    color: #fff;
+}
+.hero-btn.red-btn::after{
+    background: #fff;
+}
+.hero-btn.red-btn::before{
+    background: #fff;
+}
+.content-image{
+    flex-basis: 50%;
+}
+.news-col img{
+    width: 100%;
+}
+
+/*-------------- Get Involved Page ----------------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/getinvolved.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.resources{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.resources-box{
+    flex-basis: 48%;
+    padding: 10px;
+    margin: 60px;
+}
+.resources-box h1{
+    padding-top: 0;
+    text-align: left;
+    font-size: 30px;
+}
+.resources-box p{
+    padding: 20px 0 40px;
+    text-align: left;
+}
+
+.hero-btn.red-btn{
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+    margin-top: 20px;
+}
+.hero-btn.red-btn:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    color: #fff;
+}
+.hero-btn.red-btn::after{
+    background: #fff;
+}
+.hero-btn.red-btn::before{
+    background: #fff;
+}
+
+/*-------------- Hiking 101 ----------------*/
+
+.hiking{
+    width: 80%;
+    margin: auto;
+}
+
+.hiking-col{
+    flex-basis: 48%;
+    padding: 10px;
+    margin: 60px;
+}
+.hiking-col h1{
+    padding-top: 0;
+    text-align: left;
+}
+.hiking-col p{
+    padding: 15px 0 25px;
+    text-align: left;
+}
+
+.hero-btn.red-btn{
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+}
+.hero-btn.red-btn:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    color: #fff;
+}
+.hero-btn.red-btn::after{
+    background: #fff;
+}
+.hero-btn.red-btn::before{
+    background: #fff;
+}
+.content-image{
+    flex-basis: 50%;
+}
+.hiking-col img{
+    width: 100%;
+}
+
+/*-------------- Get Involved Page ----------------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/get.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.getinvolved{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    text-align: left;
+}
+
+.getinvolved-box{
+    flex-basis: 48%;
+    padding: 10px;
+    margin: 60px;
+    margin-top: 60px;
+}
+.getinvolved-box h1{
+    padding-top: 0;
+    text-align: left;
+    font-size: 30px;
+}
+.getinvolved-box p{
+    padding: 20px 0 40px;
+    text-align: left;
+}
+
+.hero-btn.red-btn{
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+    margin-top: 20px;
+}
+.hero-btn.red-btn:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    color: #fff;
+}
+.hero-btn.red-btn::after{
+    background: #fff;
+}
+.hero-btn.red-btn::before{
+    background: #fff;
+}
+
+/*-------------- Volunteer ----------------*/
+
+.volunteer{
+    flex-basis: 48%;
+    width: 80%;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+.volunteer img{
+    height: 400px;
+}
+.volunteer-col{
+    flex-basis: 48%;
+    padding: 10px;
+    margin: 60px;
+}
+.volunteer-col h1{
+    padding-top: 0;
+    text-align: left;
+}
+.volunteer-col p{
+    padding: 15px 0 25px;
+    text-align: left;
+}
+
+.hero-btn.red-btn{
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+}
+.hero-btn.red-btn:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    color: #fff;
+}
+.hero-btn.red-btn::after{
+    background: #fff;
+}
+.hero-btn.red-btn::before{
+    background: #fff;
+}
+.content-image{
+    flex-basis: 50%;
+}
+.volunteer-col img{
+    width: 100%;
+}
+
+
+/*-------------- Contribute ----------------*/
+
+.contribute{
+    width: 70%;
+    margin: auto;
+    min-height: 270px;  
+}
+.contribute-col{
+    flex-basis: 48%;
+    padding: 10px;
+    margin: 60px;
+}
+.contribute-col h1{
+    padding-top: 0;
+    text-align: left;
+}
+.contribute-col p{
+    padding: 15px 0 25px;
+    text-align: left;
+}
+
+.hero-btn.red-btn{
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+}
+.hero-btn.red-btn:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    color: #fff;
+}
+.hero-btn.red-btn::after{
+    background: #fff;
+}
+.hero-btn.red-btn::before{
+    background: #fff;
+}
+.content-image{
+    flex-basis: 50%;
+}
+.contribute img{
+   width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
